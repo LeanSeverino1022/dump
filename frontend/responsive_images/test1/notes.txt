@@ -1,0 +1,17 @@
+
+
+To make sure these new pieces of HTML work in old browsers as well as current browsers, 
+we can include a piece of JavaScript known as a polyfill. 
+In this case, we'll be using a polyfill called picturefill.
+
+picturefill can just be included in your project but if you want ot learn about it, check out: http://scottjehl.github.io/picturefill/
+
+async attribute tells the browser it can load the script asynchronously, meaning it won't block HTML rendering and will just load whenever it can. Use async with scripts without dependencies.
+
+width descriptor(ex: 2048w) tells the browser the width of the image 
+pixel density descriptor (ex: 2x in  srcset="img/photo-@2x,jpg 2x, img/photo-@1x.jpg 1x")
+
+why we need the width of the browser? - The browser doesn't know the width of an image until it's completely downloaded so, we need to tell the browser that a particular image is this wide and that way it can intelligently select the correct source 
+
+TODO FINISH ADDING SIZES
+ referemce: https://teamtreehouse.com/library/responsive-images/image-delivery-with-srcset-and-sizes/adding-sizes
